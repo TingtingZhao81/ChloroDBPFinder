@@ -239,17 +239,23 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
   write.csv(filled_tb, paste0(mzmldir, "/gap_filled.csv"), row.names = FALSE )
     ```
 ### Part 4 Annotation
+  * Specify the path feature table that needs to annotate. <br>
+    Users need to manual change the path within read.csc() function below
+    ```angular2html
+    table_need_annotation <- read.csv("C:/Users/User/Desktop/testmzML/TW APM noAscorbic_159_cl_high_quality.csv")
+    ```
 
   * Spectral database search
     ```angular2html
     # Load database
     Cl_db <-  read.csv(Cl_db_path)
     # Compound annotation by spectral database search
-    annotated_tb <- annonateFeature(featureTable = filled_tb, Cl_db, ion_mode = "P", ref_mz_tol =25, dp_score = 70, dp_num = 2)
+    annotated_tb <- annonateFeature(featureTable = table_need_annotation, Cl_db, ion_mode = "P", ref_mz_tol =25, dp_score = 70, dp_num = 2)
     # Output annotations
     write.csv(annotated_tb, paste0(mzmldir, "/", nrow(annotated_tb[annotated_tb$score!=0,]),"_annotations.csv"), row.names = FALSE)
 
     ```
+    - table_need_annotation: a feature table that needs annotation
     - ion_mode: "P" for positive mode, "N" for negative mode
     - ref_mz_tol: m/z tolerance for spectral database search
     - dp_score: score threshold, default 70 out of 100.
