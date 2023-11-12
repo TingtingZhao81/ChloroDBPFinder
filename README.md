@@ -39,8 +39,17 @@ install.packages('clue')
 install.packages('randomForest')
 install.packages("BiocManager")
 BiocManager::install("xcms")
+
+```
+In order to install ISFrag successfully to identify in-source fragments, please install the following packages first:
+```angular2html
+BiocManager::install("CAMERA")
+BiocManager::install("metaMS")
 devtools::install_github('HuanLab/ISFrag')
 ```
+If you can not install ISFrag successfully, 
+you can simply bypass ISFrag by setting the parameters `isfrag = FALSE` in line 22 of demo script.
+
 
 ### ChloroDBPFinder installation
 ```angular2html
@@ -105,7 +114,6 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
 * Load library 
   ```angular2html
   library(ChloroDBPFinder)
-  library(ISFrag)
 
 * Specify the path of machine learning model
   ```angular2html
@@ -176,6 +184,7 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
   ````
   # detect in-source fragment 
   if(isfrag){ 
+     library(ISFrag)
      customFT <- cl_tb
      customFT$Adduct <- 0
      customFT$isotope <- 0
