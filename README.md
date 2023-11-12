@@ -37,14 +37,14 @@ install.packages('foreach')
 install.packages('parallel')
 install.packages('clue')
 install.packages('randomForest')
-devtools::install_github('github.com/HuanLab/ISFrag')
+devtools::install_github('HuanLab/ISFrag')
 install.packages("BiocManager")
 BiocManager::install("xcms")
 ```
 
 ### ChloroDBPFinder installation
 ```angular2html
-devtools::install_github('github.com/TingtingZhao81/ChloroDBPFinder')
+devtools::install_github('TingtingZhao81/ChloroDBPFinder')
 ```
 
 ### Download machine learning model
