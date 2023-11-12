@@ -48,9 +48,9 @@ devtools::install_github('TingtingZhao81/ChloroDBPFinder')
 ```
 
 ### Download machine learning model
-`Binary classifier` and `Multiclass classifier` can be freely downloaded in [machine learning model website](https://github.com/TingtingZhao81/ChloroDBPFinder_data)
+`Binary classifier` and `Multiclass classifier` can be freely downloaded in [machine learning model website](https://github.com/TingtingZhao81/ChloroDBPFinder_support/tree/main/machine_learning_model)
 
-`Demo data` can be freely downloaded in [demo data website](https://github.com/TingtingZhao81/ChloroDBPFinder_data)
+`Demo data` can be freely downloaded in [demo data website](https://github.com/TingtingZhao81/ChloroDBPFinder_support/tree/main/demo_data)
 
 ## Instructions for package usage
 
@@ -96,11 +96,11 @@ The reference table should be in a format as below. Users can call `data('seed_d
 | Precursor1 | seed  | APM            | C14H18N2O5   | 295.1296 | 520  | 0  | 70.0292;88.0397;111.0548 | 3140;10889;855;2921 |
 | S1_2       | seed  | chlorinatedAPM | C14H17N2O5Cl | 329.0906 | 1200 | 1  | 7002;119.0735;120.08     | 789;9909;1230       |
 
-4. If users want to construct a molecular networking, users can either use a default a reaction pathway table or customize one. <br>
+4. If users want to construct a molecular networking, users can either use a [default reaction pathway table](https://github.com/TingtingZhao81/ChloroDBPFinder_support/tree/main/reaction_pathways) or customize one. <br>
 Users can call `data('reaction_pathways')` to check the format. <br>
 
 ### Set parameters
-A demo script can be downloaded from [demo script](https://github.com/TingtingZhao81/ChloroDBPFinder_data)
+A demo script can be downloaded from [demo script website](https://github.com/TingtingZhao81/ChloroDBPFinder_support/tree/main/demo_script)
 
 * Load library 
   ```angular2html
