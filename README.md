@@ -249,7 +249,7 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
     ```
 ### Part 4 Annotation
   * Specify the path feature table that needs to annotate. <br>
-    Users need to manual change the path within read.csc() function below
+    Users need to manually change the path within read.csv() function below
     ```angular2html
     table_need_annotation <- read.csv("C:/Users/User/Desktop/testmzML/TW APM noAscorbic_159_cl_high_quality.csv")
     ```
