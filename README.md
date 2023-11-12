@@ -37,9 +37,9 @@ install.packages('foreach')
 install.packages('parallel')
 install.packages('clue')
 install.packages('randomForest')
-devtools::install_github('HuanLab/ISFrag')
 install.packages("BiocManager")
 BiocManager::install("xcms")
+devtools::install_github('HuanLab/ISFrag')
 ```
 
 ### ChloroDBPFinder installation
@@ -119,7 +119,7 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
   ```
 * Specify the format of the raw lcms data. 
   ```angular2html
-    lcmspattern <- ".mzML"  # String: ".mzML" or ".mzXML"
+    lcmspattern <- ".mzXML"  # String: ".mzML" or ".mzXML"
     mzMLfile <- list.files(mzmldir, pattern = lcmspattern)
     ```
 
