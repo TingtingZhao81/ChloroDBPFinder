@@ -315,6 +315,7 @@ A demo script can be downloaded from [demo script website](https://github.com/Ti
     
 ## Citation
 If you use ChloroDBPFinder in your research, please cite the following paper:
+1.	T. Zhao, N. Wawryk, S. Xing, B. Low, G. Li, H. Yu, Y. Wang, Q. Shen, X. F. Li*, T. Huan*, ChloroDBPFinder: Machine Learning-Guided Recognition of Chlorinated Disinfection Byproducts from Nontargeted LC-HRMS Analysis, Analytical Chemistry, 2024, 96, 6, 2590-2598. [link](https://pubs.acs.org/doi/10.1021/acs.analchem.3c05124)
  
 
 
